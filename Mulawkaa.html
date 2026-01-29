@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cześć Kuba</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fffbe6;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            color: #2f7d32;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            background-color: #c8e6c9;
+            cursor: pointer;
+        }
+
+        #list {
+            display: none;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #2f7d32;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center;">
+        <h1>🌻🌻🌻<br>Cześć Kuba<br>🌻🌻🌻</h1>
+
+        <button onclick="startMuzyka(); pokazList();">
+            PA JAKI DŻASTA TO JEST INFORMATYK
+        </button>
+
+        <div id="list">
+            jesteś spełnieniem moich marzeń
+        </div>
+    </div>
+
+    <audio id="muzyka" loop>
+        <source src="sanah-ja-cie-lubie.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function pokazList() {
+            document.getElementById("list").style.display = "block";
+        }
+
+        function startMuzyka() {
+            document.getElementById("muzyka").play();
+        }
+    </script>
+</body>
+</html>
